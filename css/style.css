@@ -355,7 +355,7 @@ body {
 }
 
 #c {
-	/* display: block; */
+	display: block;
 	width: 44vw;
 	height: 57.5vh;
 	/* background: rgb(180, 180, 180); */
