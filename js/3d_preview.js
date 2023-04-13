@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {OBJLoader} from 'three/addons/loaders/OBJLoader.js';
-import {MTLLoader} from 'three/addons/loaders/MTLLoader.js';
+// import {MTLLoader} from 'three/addons/loaders/MTLLoader.js';
 
 function main() {
 	const canvas = document.querySelector('#c');
@@ -20,29 +20,6 @@ function main() {
 	controls.update();
 
 	const scene = new THREE.Scene();
-	// scene.background = new THREE.Color('black');
-
-	// {
-	// 	const planeSize = 40;
-
-	// 	const loader = new THREE.TextureLoader();
-	// 	const texture = loader.load('https://threejs.org/manual/examples/resources/images/checker.png');
-	// 	texture.encoding = THREE.sRGBEncoding;
-	// 	texture.wrapS = THREE.RepeatWrapping;
-	// 	texture.wrapT = THREE.RepeatWrapping;
-	// 	texture.magFilter = THREE.NearestFilter;
-	// 	const repeats = planeSize / 2;
-	// 	texture.repeat.set(repeats, repeats);
-
-	// 	const planeGeo = new THREE.PlaneGeometry(planeSize, planeSize);
-	// 	const planeMat = new THREE.MeshPhongMaterial({
-	// 		map: texture,
-	// 		side: THREE.DoubleSide,
-	// 	});
-	// 	const mesh = new THREE.Mesh(planeGeo, planeMat);
-	// 	mesh.rotation.x = Math.PI * -.5;
-	// 	scene.add(mesh);
-	// }
 
 	{
 		const color = 0xFFFFFF;
@@ -57,38 +34,18 @@ function main() {
 		const light = new THREE.DirectionalLight(color, intensity);
 		light.position.set(0, 200, 460);
 		scene.add(light);
-		// scene.add(light.target);
 	}
-
-	// {
-	// 	const mtlLoader = new MTLLoader();
-	// 	mtlLoader.load('https://threejs.org/manual/examples/resources/models/windmill/windmill.mtl', (mtl) => {
-	// 		mtl.preload();
-	// 		const objLoader = new OBJLoader();
-	// 		objLoader.setMaterials(mtl);
-	// 		objLoader.load('https://threejs.org/manual/examples/resources/models/windmill/windmill.obj', (root) => {
-	// 			scene.add(root);
-	// 		});
-	// 	});
-	// }
-
-	// {
-	// 	const objLoader = new OBJLoader();
-	// 	objLoader.load('obj models/5-36/5-36-in_mesh.obj', (root) => {
-	// 		scene.add(root);
-	// 		root.position.set(-200, -200, -120)
-	// 	});
-	// }
 
 	{
 		const material = new THREE.MeshPhongMaterial({
-			color: 0x000000,
-			flatShading: true,
+			color: 0xbebebe,
 			side: THREE.DoubleSide
 		});
 		const objLoader = new OBJLoader();
-		// objLoader.setMaterials(material)
 		objLoader.load('obj models/5-36/5-36-in_mesh.obj', (root) => {
+			root.traverse(node => {
+				node.material = material;
+			})
 			scene.add(root);
 			root.position.set(-200, -200, -120)
 		});
