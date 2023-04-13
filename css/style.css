@@ -28,11 +28,6 @@ body {
   background: #cfcfcf;
 }
 
-/* canvas {
-  display: block;
-  vertical-align: bottom;
-} */
-
 #particles-js {
   position: relative;
   width: 100%;
@@ -61,7 +56,6 @@ body {
   letter-spacing: 0.5em;
   color: rgb(0, 0, 0);
   float: left;
-  /* margin: 0; */
 }
 
 #title_image {
@@ -108,7 +102,6 @@ body {
   height: 94%;
   top: 3%;
   left: 1%;
-  /* background-color: rgb(253 253 253 / 24%); */
   float: left;
   border-radius: 5px;
   transition: 0.3s;
@@ -152,7 +145,6 @@ body {
   line-height: 5.6vh;
   letter-spacing: 0.124em;
   color: rgb(0, 0, 0);
-  /* margin-left: 12%; */
   text-align: center;
 }
 
@@ -160,9 +152,6 @@ body {
   position: relative;
   width: 29%;
   height: 100%;
-  /* top: 0%;
-  left: 0%; */
-  /* background-color: rgb(225 115 115 / 61%); */
   float: right;
   border-radius: 10px;
 }
@@ -173,7 +162,7 @@ body {
   height: 96%;
   top: 2%;
   left: 0%; */
-  /* background: rgba(237, 236, 236, 0.35); */
+  background: rgba(237, 236, 236, 0.35);
   /* backdrop-filter: blur(0.5px); */
   border-radius: 3px;
 }
@@ -358,8 +347,6 @@ body {
 	display: block;
 	width: 44vw;
 	height: 57.5vh;
-	/* background: rgb(180, 180, 180); */
-	/* backdrop-filter: blur(0.5px); */
 	margin-top: 1.5vh;
 	margin-left: 0.7vw;
 }
@@ -370,7 +357,6 @@ body {
   height: 5vh;
   left: 0.7vw;
   bottom: 5vh;
-  /* background-color: red; */
 }
 
 .flame-button {

@@ -31,9 +31,17 @@ function main() {
 	{
 		const color = 0xFFFFFF;
 		const intensity = 0.4;
-		const light = new THREE.DirectionalLight(color, intensity);
-		light.position.set(0, 200, 460);
-		scene.add(light);
+		const light_1 = new THREE.DirectionalLight(color, intensity);
+		light_1.position.set(0, 200, 460);
+		scene.add(light_1);
+	}
+
+	{
+		const color = 0xFFFFFF;
+		const intensity = 0.2;
+		const light_2 = new THREE.DirectionalLight(color, intensity);
+		light_2.position.set(0, 200, -460);
+		scene.add(light_2);
 	}
 
 	{
