@@ -56,7 +56,7 @@ function main() {
 				node.material = material;
 			})
 			scene.add(root);
-			root.position.set(-200, -200, -120)
+			root.position.set(-200, -195, -120)
 		});
 	}
 
