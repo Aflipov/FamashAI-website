@@ -25,13 +25,13 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	background: #cfcfcf;
+	background: #fdfdfd;
 }
 
 #particles-js {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 99.5vh;
 	background-color: #fdfdfd;
 	background-image: url("");
 	background-repeat: no-repeat;
