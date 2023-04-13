@@ -9,7 +9,7 @@ function main() {
 	renderer.outputEncoding = THREE.sRGBEncoding;
 
 	const fov = 45;
-	const aspect = 2;	// the canvas default
+	const aspect = 2;
 	const near = 0.1;
 	const far = 10000;
 	const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);

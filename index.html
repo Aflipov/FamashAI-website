@@ -3,6 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>FAMASHAI</title>
+
+		<style>
+			.center {
+				width: 100%;
+				height: 100%;
+				display:flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+
 		<link rel="shortcut icon" href="/assetts/main_v2.png" type="image/x-icon">
 		<link rel="stylesheet" href="css/style.css" />
 
@@ -26,35 +37,101 @@
 			<div id="bottomstick"></div>
 		</div>
 
-		<!-- DRAGONDROP container -->
 		<div id="dragondrop">
 			<div id="cloud_side">
 				<div id="cloud_image"></div>
 				<div id="blure_stik">
-					<h1 id="drdrop_text1">DROP FILES HERE</h1>
+					<h1 id="drdrop_text1">
+						<div class="center">
+							DROP FILES HERE
+						</div>
+					</h1>
 				</div>
 			</div>
 			<div id="choose_side">
-				<a href="" class="gradient-button">CHOOSE FILE</a>
+				<a class="gradient-button" role="button">
+					<div class="center">
+						CHOOSE<br>FILE
+					</div>
+				</a>
 			</div>
 		</div>
 
 		<div id="uploading_fles">
 			<div id="up_header">UPLOADED FILES</div>
+			<div id="container">
+				<div id="item1">
+					<div class="center">
+						<div id="file_name">File_name_1</div>
+						<button class="convert_button" role="button">Convert</button>
+						<button class="deleat_button" role="button">Deleat</button>
+					</div>
+				</div>
+				<div id="item1">
+					<div class="center">
+						<div id="file_name">File_name_2</div>
+						<button class="convert_button" role="button">Convert</button>
+						<button class="deleat_button" role="button">Deleat</button>
+					</div>
+				</div>
+				<div id="item1">
+					<div class="center">
+						<div id="file_name">File_name_3</div>
+						<button class="convert_button" role="button">Convert</button>
+						<button class="deleat_button" role="button">Deleat</button>
+					</div>
+				</div>
+				<div id="item1">
+					<div class="center">
+						<div id="file_name">File_name_4</div>
+						<button class="convert_button" role="button">Convert</button>
+						<button class="deleat_button" role="button">Deleat</button>
+					</div>
+				</div>
+				<div id="item1">
+					<div class="center">
+						<div id="file_name">File_name_5</div>
+						<button class="convert_button" role="button">Convert</button>
+						<button class="deleat_button" role="button">Deleat</button>
+					</div>
+				</div>
+				<div id="item1">
+					<div class="center">
+						<div id="file_name">File_name_6</div>
+						<button class="convert_button" role="button">Convert</button>
+						<button class="deleat_button" role="button">Deleat</button>
+					</div>
+				</div>
+				
+			</div>
 		</div>
 
 		<div id="button_pannel">
-			<a href="" class="accept-button">accept</a>
-			<a href="" class="cancel-button">cancel</a>
+			<a class="convert_all_button" role="button">
+				<div class="center">
+					convert all
+				</div>
+			</a>
+			<a class="deleat_all_button" role="button">
+				<div class="center">
+					deleat all
+				</div>
+			</a>
 		</div>
 
 		<div id="preview">
 			<div id="pre_header">PREVIEW OF YOUR .OBJ FILE</div>
 			<canvas id="c"></canvas>
-			<div id="download_pannel">
-				<a href="" class="obj-button">obj</a>
-				<a href="" class="flame-button">flame</a>
-			</div>
+			<a class="obj-button" role="button">
+				<div class="center">
+					obj
+				</div>
+			</a>
+			<a class="flame-button" role="button">
+				<div class="center">
+					flame
+				</div>
+			</a>
 		</div>
 
 		<!-- scripts -->
