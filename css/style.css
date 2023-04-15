@@ -218,7 +218,7 @@ body {
 	border-radius: 7px;
 }
 .deleat_all_button:hover {
-	background: #e5682e;
+	background: linear-gradient(to bottom right, #ff3258, #ffc559);
 	box-shadow: 0 15px 20px #e5682e44;
 	color: white;
 	transform: translateY(-3px);
@@ -248,7 +248,8 @@ body {
 	border-radius: 7px;
 }
 .convert_all_button:hover {
-	background: #2ee59d;
+	/* background: #2ee59d; */
+	background: linear-gradient(to bottom right, #229e6c, #43ffb4);
 	box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
 	color: white;
 	transform: translateY(-3px);
@@ -335,12 +336,9 @@ body {
 	white-space: nowrap;
 }
 
-.convert_button:not([disabled]):focus {
-	box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(255, 74, 243, 0.5), .125rem .125rem 1rem rgba(73, 255, 255, 0.5);
-}
-
 .convert_button:not([disabled]):hover {
 	box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(255, 74, 243, 0.5), .125rem .125rem 1rem rgba(73, 255, 255, 0.5);
+	color: white;
 }
 
 .deleat_button {
@@ -368,12 +366,9 @@ body {
 	white-space: nowrap;
 }
 
-.deleat_button:not([disabled]):focus {
-	box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
 .deleat_button:not([disabled]):hover {
 	box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+	color: #000000;
 }
 
 
