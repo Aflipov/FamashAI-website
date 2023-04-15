@@ -52,6 +52,7 @@ function main() {
 		});
 		const objLoader = new OBJLoader();
 		objLoader.load('obj models/5-36/5-36-in_mesh.obj', (root) => {
+		// objLoader.load('obj models/6-45/6-45-in_mesh.obj', (root) => {
 			root.traverse(node => {
 				node.material = material;
 			})

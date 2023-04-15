@@ -61,7 +61,7 @@ body {
 #title_image {
 	width: 9vw;
 	height: 11vh;
-	background-image: url("/assetts/main_v2.png");
+	background-image: url(../assetts/logo.png);
 	background-size: cover;
 	background-position: center center;
 	float: left;
@@ -116,7 +116,8 @@ body {
 	height: 95%;
 	left: 12%;
 	top: 2%;
-	background-image: url(/assetts/cloud3.png);
+	background-image: url(../assetts/cloud3.png);
+	
 	background-size: cover;
 	background-position: center center;
 }
@@ -294,7 +295,7 @@ body {
 }
 
 #item1 {
-	height: 50px;
+	height: 7vh;
 	background-color:rgba(213, 213, 213, 0.5);
 	margin: 1%;
 	border-radius: 10px;
